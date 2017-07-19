@@ -291,6 +291,7 @@ public class ExempleActivity extends AppCompatActivity {
         novate = new Novate.Builder(this)
                 .addParameters(parameters)
                 .connectTimeout(10)
+                .addCache(true)
                 .baseUrl("http://api.douban.com/")
                 //.addApiManager(ApiManager.class)
                 .addLog(true)
